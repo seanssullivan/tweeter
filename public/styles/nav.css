@@ -1,0 +1,18 @@
+/*
+ * Navbar stuff
+ */
+nav {
+  position: fixed;
+  top: 0px;
+  color: #FFFFFF;
+  background-color: #4056A1;
+  height: 120px;
+  width: 100%;
+  z-index: 1;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+nav span {
+  font-family: 'Bungee', cursive;
+}

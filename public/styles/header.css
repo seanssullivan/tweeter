@@ -1,0 +1,23 @@
+header {
+  position: absolute;
+  display: block;
+  top: 120px;
+  height: 400px;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  background-color: #e69200;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+}
+
+header div img {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+header div h2 {
+  position: relative;
+  display: block;
+  margin: auto;
+}
