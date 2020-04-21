@@ -1,0 +1,56 @@
+/*
+ * New tweet stuff
+ */
+
+.new-tweet {
+  display: block;
+  box-sizing: border-box;
+}
+
+.new-tweet::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.new-tweet form label {
+  display: block;
+  font-weight: bold;
+}
+
+#tweet-text {
+  display: block;
+  color: #545149;
+  background-color: #f4f1ec;
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid #545149;
+  overflow: none;
+  resize: none;
+}
+
+.new-tweet form button {
+  color: #FFFFFF;
+  background-color: #4056A1;
+  padding: 5px 15px;
+  margin: 10px 0px;
+  border-style: none;
+  font-family: 'Bungee', cursive;
+  float: left;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.counter {
+  color: #545149;
+  padding: 5px 0px;
+  margin: 10px 0px;
+  font-family: 'Bungee', cursive;
+  float: right;
+}
+
+.negative {
+  color: red;
+}
