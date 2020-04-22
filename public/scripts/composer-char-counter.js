@@ -6,10 +6,10 @@
  * Updates the character counter.
  * @param {object} self 
  */
-const updateCounter = function(self) {
-  const text = $(self).val();
+const updateCounter = function() {
+  const text = $(this).val();
   const charsLeft = 140 - parseInt(text.length);
-  const counter = $(self).siblings(".counter");
+  const counter = $(this).siblings(".counter");
   
   counter.text(charsLeft);
 
