@@ -1,5 +1,6 @@
 
 article.tweet {
+  margin: 50px 0px;
   padding: 10px;
   border: 4px solid #545149;
 }
@@ -19,11 +20,11 @@ article.tweet header:after {
   display: table;
 }
 
-.user-profile {
+.user {
   float: left;
 }
 
-.tag {
+.handle {
   float: right;
   padding: 20px;
 }
@@ -32,7 +33,7 @@ article.tweet header:after {
   margin: 20px;
 }
 
-.user-img { /* Placeholder for profile image */
+.user-avatar { /* Placeholder for profile image */
   background-color: black;
   border-radius: 50%;
   height: 50px;
@@ -44,12 +45,12 @@ article.tweet header:after {
   float: right;
 }
 
-.user-tag {
+.user-handle {
   color: #c5cbe3;
   opacity: 0%;
 }
 
-article.tweet:hover .user-tag{
+article.tweet:hover .user-handle{
   opacity: 100%;
 }
 

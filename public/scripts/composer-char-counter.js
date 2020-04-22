@@ -14,6 +14,5 @@ $(document).ready(function() {
     } else if (charsLeft >= 0 && counter.hasClass("negative")) {
       counter.removeClass("negative");
     }
-
   })
 });
