@@ -20,7 +20,7 @@ article.tweet header:after {
   display: table;
 }
 
-.user {
+.user-info {
   float: left;
 }
 

@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
- // Fake data taken from initial-tweets.json
+// Fake data taken from initial-tweets.json
 const data = [
   {
     "user": {
@@ -29,66 +29,7 @@ const data = [
   }
 ]
 
-const renderTweets = (tweetsArray) => {
-  const $timeline = $('#timeline');
-  for (const tweetObj of tweetsArray) {
-    const $tweet = createTweetElement(tweetObj);
-    $timeline.append($tweet);
-  }
-};
-
-const createTweetElement = (tweet) => {
-  const $tweet = $(`
-  <article class="tweet">
-    <header>
-      <div class="user">
-        <img class="user-avatar" src="#">
-        <h3 class="user-name">${tweet.user.name}</h3>
-      </div>
-      <div class="handle">
-        <span class="user-handle">${tweet.user.handle}</span>
-      </div>
-    </header>
-    <p>${tweet.content.text}</p>
-    <footer>
-      <span class="time-posted">${createPostDate(tweet.created_at)}</span>
-      <form method="POST" action="#">
-        <button class="flag-tweet"></button>
-        <button class="share-tweet"></button>
-        <button class="heart-tweet"></button>
-      </form>
-    </footer>
-  </article
-  `);
-  return $tweet;
-};
-
-const createPostDate = (timePosted) => {
-  const datePosted = new Date(timePosted);
-  const timeElapsed = Math.abs(new Date() - datePosted);
-
-  const daysElapsed = Math.floor(timeElapsed / (1000 * 60 * 60 * 24));
-  const hoursElapsed = Math.floor(timeElapsed / (1000 * 60 * 60));
-  const minutesElapsed = Math.floor(timeElapsed / (1000 * 60));
-
-  let displayDate = '';
-  if (daysElapsed > 1) {
-    displayDate = `${daysElapsed} days ago`;
-  } else if (daysElapsed === 1) {
-      displayDate = `${daysElapsed} day ago`;
-  } else if (hoursElapsed > 1) {
-    displayDate = `${hoursElapsed} hours ago`;
-  } else if (hoursElapsed === 1) {
-    displayDate = `${hoursElapsed} hour ago`;
-  } else if (minutesElapsed > 1) {
-    displayDate = `${minutesElapsed} minutes ago`;
-  } else if (minutesElapsed === 1) {
-    displayDate = `${minutesElapsed} minute ago`;
-  } else {
-    displayDate = "Just posted";
-  }
-  
-  return displayDate;
-};
-
-renderTweets(data);
+$(document).ready(function() {
+  $("#tweet-text").on('keyup', updateCounter(this));
+  renderTweets(data);
+});
