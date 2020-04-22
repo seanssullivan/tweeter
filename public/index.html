@@ -6,7 +6,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -32,7 +32,6 @@
       <div>
         <img src="/images/profile-hex.png">
       </div>
-      <br>
       <div>
         <h2>Your Name</h2>
       </div>
@@ -40,7 +39,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section id="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="tweets/">
           <label for="tweet-text">What are you humming about?</label>
@@ -49,12 +48,17 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </form>
       </section>
-      <section class="recent-tweets">
-        <article class="tweet">
+      
+      <section id="timeline">
+        <article class="tweet container">
           <header>
-            <img src="#">
-            <h3 class="user-name">Newton</h3>
-            <span class="user-tag"></span>
+            <div class="user-profile">
+              <img class="user-img" src="#">
+              <h3 class="user-name">Newton</h3>
+            </div>
+            <div class="tag">
+              <span class="user-tag">@Sirisaac</span>
+            </div>
           </header>
           <p>If I have seen further it is by standing on the shoulders of giants</p>
           <footer>
@@ -66,7 +70,7 @@
             </form>
           </footer>
         </article>
-    </section>
+      </section>
     </main>
 
   </body>

@@ -2,24 +2,17 @@
  * New tweet stuff
  */
 
-.new-tweet {
-  display: block;
-  box-sizing: border-box;
-}
-
-.new-tweet::after {
+#new-tweet::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.new-tweet form label {
-  display: block;
+#new-tweet form label {
   font-weight: bold;
 }
 
 #tweet-text {
-  display: block;
   color: #545149;
   background-color: #f4f1ec;
   width: 100%;
@@ -29,7 +22,7 @@
   resize: none;
 }
 
-.new-tweet form button {
+#new-tweet form button {
   color: #FFFFFF;
   background-color: #4056A1;
   padding: 5px 15px;

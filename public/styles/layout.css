@@ -25,9 +25,11 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
  main {
-   position: relative;
-   top: 520px;
    width: 90%;
    margin: 0px auto;
    background-color: inherit;
  }
+
+ #timeline {
+  margin-top: 20px;
+}
