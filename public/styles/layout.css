@@ -29,7 +29,25 @@ body {
    margin: 0px auto;
    background-color: inherit;
  }
+ 
+ button:hover {
+   cursor: pointer;
+ }
 
  #tweets-container {
   margin-top: 20px;
+}
+
+#return-to-top {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+  border-style: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  z-index: 1;
 }

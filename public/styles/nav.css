@@ -13,6 +13,14 @@ nav {
   box-sizing: border-box;
 }
 
-nav span {
+#app-logo {
   font-family: 'Bungee', cursive;
+  float: left;
+}
+
+#form-toggle {
+  color: #FFFFFF;
+  background-color: #4056A1;
+  border-style: none;
+  float: right;
 }

@@ -31,3 +31,32 @@ const createPostDate = (timePosted) => {
 
   return displayDate;
 };
+
+/**
+ * Sanitizes user input.
+ * @param {string} text 
+ */
+const escapeText = function(text) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(text));
+  return div.innerHTML;
+}
+
+/**
+ * Confirms whether or not a tweet is valid.
+ * @param {string} tweet 
+ */
+const validateTweet = function(tweet) {
+  
+  let output = true;
+  if (tweet.length === 0) {
+    $("#error-message").text("Tweet cannot be empty");
+    output = false;
+  } else if (tweet.length > 140) {
+    $("#error-message").text("Tweet cannot be longer than 140 characters");
+    output = false;
+  } else {
+    $("#error-message").text('');
+  }
+  return output;
+}

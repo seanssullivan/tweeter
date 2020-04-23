@@ -6,7 +6,6 @@ article.tweet {
 }
 
 article.tweet:hover {
-  font-weight: 600;
   box-shadow: 10px 10px #c5cbe3;
 }
 
@@ -21,6 +20,7 @@ article.tweet header:after {
 }
 
 .user-info {
+  font-weight: 300;
   float: left;
 }
 
@@ -47,11 +47,7 @@ article.tweet header:after {
 
 .user-handle {
   color: #c5cbe3;
-  opacity: 0%;
-}
-
-article.tweet:hover .user-handle{
-  opacity: 100%;
+  font-weight: 600;
 }
 
 article p {

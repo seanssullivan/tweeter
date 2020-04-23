@@ -1,14 +1,17 @@
 /*
  * New tweet stuff
  */
+ #compose-tweet {
+  display: none;
+}
 
-#new-tweet::after {
+#compose-tweet::after {
   content: "";
   clear: both;
   display: table;
 }
 
-#new-tweet form label {
+#compose-tweet form label {
   font-weight: bold;
 }
 
@@ -22,7 +25,7 @@
   resize: none;
 }
 
-#new-tweet form button {
+#compose-tweet form button {
   color: #FFFFFF;
   background-color: #4056A1;
   padding: 5px 15px;
@@ -32,8 +35,11 @@
   float: left;
 }
 
-button:hover {
-  cursor: pointer;
+#error-message {
+  color: red;
+  padding: 15px 15px;
+  margin: auto 0px;
+  float: left;
 }
 
 .counter {

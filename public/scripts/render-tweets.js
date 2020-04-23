@@ -5,8 +5,9 @@
   * @param {array} tweetsArray 
   */
  const renderTweets = (tweetsArray) => {
+  const sortedTweets = tweetsArray.sort((a, b) => b.created_at - a.created_at);
   const $timeline = $('#tweets-container');
-  for (const tweetObj of tweetsArray) {
+  for (const tweetObj of sortedTweets) {
     const $tweet = createTweetElement(tweetObj);
     $timeline.append($tweet);
   }
@@ -22,13 +23,13 @@ const createTweetElement = (tweet) => {
     <header>
       <div class="user-info">
         <img class="user-avatar" src="#">
-        <h3 class="user-name">${tweet.user.name}</h3>
+        <h3 class="user-name">${escapeText(tweet.user.name)}</h3>
       </div>
       <div class="handle">
-        <span class="user-handle">${tweet.user.handle}</span>
+        <span class="user-handle">${escapeText(tweet.user.handle)}</span>
       </div>
     </header>
-    <p>${tweet.content.text}</p>
+    <p>${escapeText(tweet.content.text)}</p>
     <footer>
       <span class="time-posted">${createPostDate(tweet.created_at)}</span>
       <form method="POST" action="#">
