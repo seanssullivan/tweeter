@@ -10,7 +10,7 @@ const hideWhileScrolling = function(selector, distance) {
     if (document.body.scrollTop > distance || document.documentElement.scrollTop > distance) {
       $(selector).css("display", "none");
     } else {
-      $(selector).css("display", "inherit");
+      $(selector).css("display", "flex");
     }
   }
 };

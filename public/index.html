@@ -17,40 +17,48 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/27e25fecdb.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span id="app-logo">tweeter</span>
-      <button id="form-toggle"><strong>Write</strong> a new tweet</button>
+      <button id="form-toggle">
+        <span><strong>Write</strong> a new tweet</span>
+        <i class="fas fa-chevron-down fa-sm"></i>
+      </button>
     </nav>
-    <header>
-      <div>
-        <img src="/images/profile-hex.png">
-      </div>
-      <div>
-        <h2>Amy Mansell</h2>
-      </div>
-    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section id="compose-tweet">
-        <h2>Compose Tweet</h2>
-        <form id="new-tweet" method="POST" action="tweets/">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <button type="submit">Tweet</button>
-          <span id="error-message"></span>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </form>
-      </section>
-      
-      <section id="tweets-container"></section>
+      <header>
+        <div>
+          <img src="/images/profile-hex.png">
+        </div>
+        <div>
+          <h2>Amy Mansell</h2>
+        </div>
+      </header>
 
-      <button id="return-to-top"></button>
+      <div id="tweet-container">
+        <section id="compose-tweet">
+          <h2>Compose Tweet</h2>
+          <form id="new-tweet" method="POST" action="tweets/">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>
+            <button type="submit">Tweet</button>
+            <span id="error-message"></span>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </form>
+        </section>
+        
+        <section id="timeline"></section>
+      </div>
+
     </main>
+    
+    <button id="return-to-top"><i class="fas fa-chevron-up fa-3x"></i></button>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/helpers.js"></script>

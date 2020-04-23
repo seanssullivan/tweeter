@@ -1,7 +1,8 @@
 /*
- * Tweet Container Style
+ * Timeline Style
  */
- #tweets-container {
+#timeline {
+  width: 100%;  
   margin-top: 20px;
 }
 
@@ -21,69 +22,65 @@ article.tweet:hover {
 /*
  * Tweet Header Styles
  */
-article.tweet header {
-  padding: 10px 0px 20px 0px;
-}
-
-article.tweet header:after {
-  content: "";
-  clear: both;
-  display: table;
+article.tweet > header {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-info {
-  font-weight: 300;
-  float: left;
+  display: inline-flex;
+}
+
+.avatar {
+  margin: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.username {
+  margin-left: 10px;;
 }
 
 .handle {
-  float: right;
-  padding: 20px;
-}
-
-.user-name {
-  margin: 20px;
-  float: right;
-}
-
-.user-avatar { /* Placeholder for profile image */
-  background-color: black;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-}
-
-.user-handle {
   color: #c5cbe3;
   font-weight: 600;
+  margin: 20px;
 }
 
 /*
  * Tweet Content Style
  */
-article p {
-  padding: 0px 20px 20px 20px;
-  margin: 0px;
+
+article > .text-box {
+  padding: 0px 20px;
   border-bottom: 4px solid #545149;
 }
 
 /*
  * Tweet Footer Styles
  */
-footer form {
-  float: right;
+
+article > footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer:after {
-  content: "";
-  clear: both;
-  display: table;
+article form {
+  padding: 10px 20px;
+  margin: 0px;
 }
 
+article .fas {
+  color: #4056A1;
+} 
 .time-posted {
   font-size: 14px;
   padding: 10px 20px;
   margin: 0px;
-  float: left;
 }

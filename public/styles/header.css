@@ -1,4 +1,4 @@
-body > header {
+body > main > header {
   position: relative;
   display: block;
   margin-top: 120px;

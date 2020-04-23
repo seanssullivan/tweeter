@@ -6,7 +6,7 @@
   */
  const renderTweets = (tweetsArray) => {
   const sortedTweets = tweetsArray.sort((a, b) => b.created_at - a.created_at);
-  const $timeline = $('#tweets-container');
+  const $timeline = $('#timeline');
   for (const tweetObj of sortedTweets) {
     const $tweet = createTweetElement(tweetObj);
     $timeline.append($tweet);
@@ -18,24 +18,25 @@
  * @param {object} tweet 
  */
 const createTweetElement = (tweet) => {
+  console.log(tweet);
   const $tweet = $(`
   <article class="tweet">
     <header>
       <div class="user-info">
-        <img class="user-avatar" src="#">
-        <h3 class="user-name">${escapeText(tweet.user.name)}</h3>
+        <img class="avatar" src="${tweet.user.avatars}">
+        <h3 class="username">${escapeText(tweet.user.name)}</h3>
       </div>
-      <div class="handle">
-        <span class="user-handle">${escapeText(tweet.user.handle)}</span>
-      </div>
+      <h3 class="handle">${escapeText(tweet.user.handle)}</h3>
     </header>
-    <p>${escapeText(tweet.content.text)}</p>
+    <div class="text-box">
+      <span>${escapeText(tweet.content.text)}</p>
+    </div>
     <footer>
       <span class="time-posted">${createPostDate(tweet.created_at)}</span>
       <form method="POST" action="#">
-        <button class="flag-tweet"></button>
-        <button class="share-tweet"></button>
-        <button class="heart-tweet"></button>
+        <button class="flag-tweet"><i class="fas fa-flag fa-xs"></i></button>
+        <button class="share-tweet"><i class="fas fa-retweet fa-xs"></i></button>
+        <button class="heart-tweet"><i class="fas fa-heart fa-xs"></i></button>
       </form>
     </footer>
   </article

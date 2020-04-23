@@ -25,9 +25,19 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
  main {
+
+  
+ }
+
+ #tweet-container {
+   width: 90%;
    width: 90%;
    margin: 0px auto;
    background-color: inherit;
+ }
+
+ button {
+  border-style: none;
  }
  
  button:hover {
@@ -39,11 +49,21 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
+  color: #f4f1ec;
   background-color: red;
   border-style: none;
   width: 100px;
   height: 100px;
   margin: 10px;
   border-radius: 50%;
+  opacity: 25%;
   z-index: 1;
+}
+
+#return-to-top .fas {
+  margin: auto;
+}
+
+#return-to-top:hover {
+  opacity: 80%;
 }

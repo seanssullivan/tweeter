@@ -11,6 +11,10 @@ nav {
   z-index: 1;
   padding: 1em;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
 }
 
 #app-logo {
@@ -22,5 +26,32 @@ nav {
   color: #FFFFFF;
   background-color: #4056A1;
   border-style: none;
-  float: right;
 }
+
+#form-toggle i {
+  display: block;
+  position: relative;
+  color: red;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    25% {
+      top: 5px;
+    }
+    50% {
+      top: 10px;
+    }
+    75% {
+      top: 5px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
