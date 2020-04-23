@@ -34,10 +34,6 @@ body {
    cursor: pointer;
  }
 
- #tweets-container {
-  margin-top: 20px;
-}
-
 #return-to-top {
   display: none;
   position: fixed;

@@ -1,4 +1,13 @@
+/*
+ * Tweet Container Style
+ */
+ #tweets-container {
+  margin-top: 20px;
+}
 
+/*
+ * Individual Tweet Style
+ */
 article.tweet {
   margin: 50px 0px;
   padding: 10px;
@@ -9,6 +18,9 @@ article.tweet:hover {
   box-shadow: 10px 10px #c5cbe3;
 }
 
+/*
+ * Tweet Header Styles
+ */
 article.tweet header {
   padding: 10px 0px 20px 0px;
 }
@@ -31,6 +43,7 @@ article.tweet header:after {
 
 .user-name {
   margin: 20px;
+  float: right;
 }
 
 .user-avatar { /* Placeholder for profile image */
@@ -41,28 +54,23 @@ article.tweet header:after {
   margin: 10px;
 }
 
-.user-name {
-  float: right;
-}
-
 .user-handle {
   color: #c5cbe3;
   font-weight: 600;
 }
 
+/*
+ * Tweet Content Style
+ */
 article p {
   padding: 0px 20px 20px 20px;
   margin: 0px;
   border-bottom: 4px solid #545149;
 }
 
-.time-posted {
-  font-size: 14px;
-  padding: 10px 20px;
-  margin: 0px;
-  float: left;
-}
-
+/*
+ * Tweet Footer Styles
+ */
 footer form {
   float: right;
 }
@@ -71,4 +79,11 @@ footer:after {
   content: "";
   clear: both;
   display: table;
+}
+
+.time-posted {
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 0px;
+  float: left;
 }

@@ -1,36 +1,26 @@
 // public/scripts/requests.js
 
 /**
- * Slides the tweet composer form down.
- * @param {object} event 
- */
-const toggleForm = function(event) {
-  $('#compose-tweet').slideDown();
-};
-
-const returnToTop = function(event) {
-  window.scrollTo(0, 0);
-}
-
-/**
  * Sends a POST request to the server with the submitted text.
  * @param {object} event - DOM event object
  */
 const postTweet = function(event) {
   event.preventDefault();
 
-  // const textArea = $('#tweet-text'); <-- Why won't the page update with I do this?
+  // const textArea = $('#tweet-text');
   const tweetText = $('#tweet-text').val();
   const isValid = validateTweet(tweetText);
 
   if (isValid) {
     const formData = $(this).serialize();
-    $.post('/tweets', formData);
-    $(this)[0].reset();
+    $.post('/tweets', formData)
+    .then(() => {
+      $(this)[0].reset();
+      loadTweets();
+    });
   }
-  
+
   $('#tweet-text').focus();
-  loadTweets();
 };
 
 /**

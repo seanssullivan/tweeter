@@ -5,19 +5,18 @@
  */
 
 $(document).ready(function() {
-  $(window).scroll(function() {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-      $("#return-to-top").css("display", "inherit");
-      $("nav").css("display", "none");
-    } else {
-      $("#return-to-top").css("display", "none");
-      $("nav").css("display", "inherit");
-    }
-  });
-  $('#return-to-top').click(returnToTop);
+  // Scroll events
+  $(window).scroll(showWhileScrolling("#return-to-top", 400));
+  $(window).scroll(hideWhileScrolling("nav", 400));
+
+  // Button events
+  $('#return-to-top').click(() => window.scrollTo(0, 0));
   $('#form-toggle').click(toggleForm);
+
+  // Form events
   $('#tweet-text').on('keyup', updateCounter);
   $('#new-tweet').submit(postTweet);
 
+  // Document-ready actions
   loadTweets();
 });
