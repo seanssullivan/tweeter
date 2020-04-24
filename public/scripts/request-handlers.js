@@ -7,7 +7,6 @@
 const postTweet = function(event) {
   event.preventDefault();
 
-  // const textArea = $('#tweet-text');
   const tweetText = $('#tweet-text').val();
   const isValid = validateTweet(tweetText);
 
