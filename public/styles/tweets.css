@@ -3,7 +3,7 @@
  */
 #timeline {
   width: 100%;  
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /*
@@ -22,7 +22,7 @@ article.tweet:hover {
 /*
  * Tweet Header Styles
  */
-article.tweet > header {
+article.tweet header {
   width: 100%;
   margin-bottom: 10px;
   display: flex;
@@ -55,7 +55,7 @@ article.tweet > header {
  * Tweet Content Style
  */
 
-article > .text-box {
+article .text-box {
   padding: 0px 20px;
   border-bottom: 4px solid #545149;
 }
@@ -63,8 +63,7 @@ article > .text-box {
 /*
  * Tweet Footer Styles
  */
-
-article > footer {
+article footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

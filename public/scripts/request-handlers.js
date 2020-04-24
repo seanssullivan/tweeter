@@ -29,7 +29,7 @@ const postTweet = function(event) {
 const loadTweets = function() {
   $.get('/tweets')
   .then(function(tweets) {
-    $('#tweets-container').empty();
+    $('#timeline').empty();
     renderTweets(tweets);
   })
 };

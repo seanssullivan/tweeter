@@ -21,22 +21,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- main {
-
-  
- }
-
- #tweet-container {
-   width: 90%;
-   width: 90%;
-   margin: 0px auto;
-   background-color: inherit;
- }
-
- button {
+button {
   border-style: none;
  }
  
@@ -44,26 +29,60 @@ body {
    cursor: pointer;
  }
 
-#return-to-top {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  color: #f4f1ec;
-  background-color: red;
-  border-style: none;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  border-radius: 50%;
-  opacity: 25%;
-  z-index: 1;
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+/*
+ * Mobile Styles
+ */
+@media screen and (max-width: 767px) {
+
+  #tweet-container {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  body > main > header {
+    position: relative;
+    display: block;
+    margin-top: 120px;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #e69200;
+    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  }
 }
 
-#return-to-top .fas {
-  margin: auto;
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 120px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+  }
+
+  #tweet-container {
+    grid-column: 2 / span 2;
+  }
+
+  body > main > header {
+    height: 400px;
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+    background-color: #e69200;
+    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-#return-to-top:hover {
-  opacity: 80%;
+@media only screen and (min-width: 1024px) {
+  
 }

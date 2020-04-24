@@ -9,7 +9,7 @@
 const updateCounter = function() {
   const text = $(this).val();
   const charsLeft = 140 - parseInt(text.length);
-  const counter = $(this).siblings(".counter");
+  const counter = $(this).siblings("footer").children(".counter");
   
   counter.text(charsLeft);
 
