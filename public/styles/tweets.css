@@ -75,9 +75,11 @@ article form {
   margin: 0px;
 }
 
-article .fas {
+article form > button {
   color: #4056A1;
-} 
+  background-color: #f4f1ec;
+}
+
 .time-posted {
   font-size: 14px;
   padding: 10px 20px;

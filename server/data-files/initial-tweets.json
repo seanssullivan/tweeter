@@ -4,21 +4,59 @@
       "name": "Newton",
       "avatars": "https://i.imgur.com/73hZDYK.png"
       ,
-      "handle": "@SirIsaac"
+      "handle": "@AnAppleADay"
     },
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1461116232227
+    "created_at": 1587697497652
   },
   {
     "user": {
       "name": "Descartes",
       "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
+      "handle": "@ToBeOrNotToBe" },
     "content": {
       "text": "Je pense , donc je suis"
     },
-    "created_at": 1461113959088
+    "created_at": 1586897497652
+  },
+  {
+    "user": {
+      "name": "Einstein",
+      "avatars": "https://i.imgur.com/73hZDYK.png"
+      ,
+      "handle": "@RelativelySpeaking"
+    },
+    "content": {
+      "text": "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."
+    },
+    "created_at": 1576497497652
+  },
+  {
+    "user": {
+      "name": "Tesla",
+      "avatars": "https://i.imgur.com/v0JXau2.png"
+      ,
+      "handle": "@Sparky"
+    },
+    "content": {
+      "text": "Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more..."
+    },
+    "created_at": 1557497497652
+  },
+  {
+    "user": {
+      "name": "Schrodinger",
+      "avatars": "https://i.imgur.com/DVpDmdR.png"
+      ,
+      "handle": "@CatMissingReturnIfFound"
+    },
+    "content": {
+      "text": "What is this Self of yours? What was the necessary condition for making the thing conceived this time into you, just you and not someone else?"
+    },
+    "created_at": 1545497497652
   }
 ]
+
+
