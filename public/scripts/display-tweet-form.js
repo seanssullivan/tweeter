@@ -2,7 +2,7 @@
 
 /**
  * Slides the tweet composer form down.
- * @param {object} event 
+ * @param {object} event
  */
 const toggleForm = function(event) {
   const tweetComposer = $('#compose-tweet');

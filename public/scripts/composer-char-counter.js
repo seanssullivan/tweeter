@@ -4,7 +4,6 @@
 
 /**
  * Updates the character counter.
- * @param {object} self 
  */
 const updateCounter = function() {
   const text = $(this).val();

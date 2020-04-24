@@ -1,0 +1,8 @@
+/*
+ * Header style
+ */
+ body > main > header {
+  text-align: center;
+  background-color: #e69200;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+ }

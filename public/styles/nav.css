@@ -1,5 +1,5 @@
 /*
- * Navbar stuff
+ * Navbar style
  */
 nav {
   position: fixed;
@@ -54,28 +54,4 @@ nav {
   100% {
     top: 0px;
   }
-}
-
-#return-to-top {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  color: #f4f1ec;
-  background-color: red;
-  border-style: none;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  border-radius: 50%;
-  opacity: 25%;
-  z-index: 1;
-}
-
-#return-to-top .fas {
-  margin: auto;
-}
-
-#return-to-top:hover {
-  opacity: 80%;
 }
